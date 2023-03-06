@@ -8,7 +8,7 @@ const store = configureStore({
     video: videoReducer,
   },
 
-  // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 module.exports = store;

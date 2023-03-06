@@ -5,4 +5,3 @@ store.subscribe(() => {
 });
 
 store.dispatch(fetchVideo());
-store.dispatch(fetchVideos());
