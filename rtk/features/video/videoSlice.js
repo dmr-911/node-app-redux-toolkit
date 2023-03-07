@@ -18,7 +18,7 @@ const initialState = {
 // async thunk for video
 const fetchVideo = createAsyncThunk(
   "video/fetchVideo",
-  async (_, { dispatch, getState }) => {
+  async (_, { dispatch }) => {
     const response = await fetch("http://localhost:9000/videos");
     const video = await response.json();
 
